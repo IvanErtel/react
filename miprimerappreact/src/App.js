@@ -2,6 +2,8 @@
 import './App.css';
 import List from './List_product';
 import Menu from './Nav_bar';
+import Footer from './Footer_';
+
  
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
 
    <List />
 
+   <Footer />
     
     </div>
   );
