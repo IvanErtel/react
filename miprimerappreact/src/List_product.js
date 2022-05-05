@@ -3,6 +3,7 @@ import './list_product.css';
 function List() {
     return (
       
+      
       <div className="producto" id="producto">
         <div className="producto__Int">
           <img src={`./remera_naranja.jpg`} alt="No se encontro la imagen"/>
