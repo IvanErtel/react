@@ -1,43 +1,72 @@
 import React from "react";
 import './list_product.css';
+import {Card, Button, Container} from 'react-bootstrap';
 function List() {
     return (
+      <>
+      <Container className="producto" id="producto">
       
-      
-      <div className="producto" id="producto">
-        <div className="producto__Int">
-          <img src={`./remera_naranja.jpg`} alt="No se encontro la imagen"/>
-          </div>
-        <div className="product__description">
-          <h3 className="produto__title">Remera Naranja</h3>
-          <spam className="produto__price">$90.00</spam>
-          <button className="btn">Comprar</button>
-        </div>
-        <div className="producto__Int">
-          <img src={`./remera_rosa.jpg`} alt="No se encontro la imagen"/>
-          </div>
-        <div className="product__description">
-          <h3 className="produto__title">Remera Naranja</h3>
-          <spam className="produto__price">$90.00</spam>
-          <button className="btn">Comprar</button>
-        </div>
-        <div className="producto__Int">
-          <img src={`./remera_azul.jpg`} alt="No se encontro la imagen"/>
-          </div>
-        <div className="product__description">
-          <h3 className="produto__title">Remera Azul</h3>
-          <spam className="produto__price">$90.00</spam>
-          <button className="btn">Comprar</button>
-        </div>
-        <div className="producto__Int">
-          <img src={`./remera_roja.jpg`} alt="No se encontro la imagen"/>
-          </div>
-        <div className="product__description">
-          <h3 className="produto__title">Remera Roja</h3>
-          <spam className="produto__price">$90.00</spam>
-          <button className="btn">Comprar</button>
-        </div>
-      </div>
+      <Card className="card" style={{ width: '18rem'}} >
+  <Card.Img variant="top" className="img" src="./remera_naranja.jpg"  />
+  <Card.Body>
+    <Card.Title className="tittle">Remera Naranja</Card.Title>
+    <Card.Text className="textC">
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Button className="btn1" variant="primary">Agregar al carrito</Button>
+  </Card.Body>
+</Card>
+
+<Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" className="img" src="./remera_rosa.jpg" />
+  <Card.Body>
+    <Card.Title className="tittle">Remera Naranja</Card.Title>
+    <Card.Text className="textC">
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Button variant="primary">Agregar al carrito</Button>
+  </Card.Body>
+</Card>
+
+<Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" className="img" src="./remera_azul.jpg" />
+  <Card.Body>
+    <Card.Title className="tittle">Remera Naranja</Card.Title>
+    <Card.Text className="textC">
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Button variant="primary">Agregar al carrito</Button>
+  </Card.Body>
+</Card>
+
+<Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" className="img" src="./remera_roja.jpg" />
+  <Card.Body>
+    <Card.Title className="tittle">Remera Naranja</Card.Title>
+    <Card.Text className="textC">
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Button variant="primary">Agregar al carrito</Button>
+  </Card.Body>
+</Card>
+
+<Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" className="img" src="./remera_verde.jpg" />
+  <Card.Body>
+    <Card.Title className="tittle">Remera Naranja</Card.Title>
+    <Card.Text className="textC">
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Button variant="primary">Agregar al carrito</Button>
+  </Card.Body>
+</Card>
+</Container>
+ </>
 
     );
   }

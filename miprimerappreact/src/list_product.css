@@ -1,18 +1,39 @@
 .producto{
-    border: solid 1px;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
     display:flex ;
     justify-content: baseline;
 }
-img{
-    height: 100px;
+.tittle{
+    text-align: center;
+}
+.img{
+    display: flex;
+    height: 270px;
+    width: 230px;
     margin: 10px;
 }
-.produto__price{
-    padding: 5px;
+.img:hover{
+    -webkit-transition:all 0.15s ease;
+    -moz-transform:scale(2.10);
+    -ms-transform:scale(2.10);
+    -o-transform:scale(2.10);
+    transform:scale(1.05);
+    border-radius: 5px;
+    box-shadow: 2px 1px 5px 5px rgba(1, 99, 63, 0.5);
+}
+.card{
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 2px 1px 5px 2px rgba(1, 99, 63, 0.3);
 }
 .btn{
-    color: aliceblue;
+    margin-left: 45px;
+    align-items: center;
     background-color: rgb(1, 99, 63);
     border-radius: 5%;
     padding: 3px;
+}
+.textC{
+    text-align: center;
 }
