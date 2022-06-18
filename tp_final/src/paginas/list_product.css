@@ -4,6 +4,9 @@
     display:flex ;
     justify-content: baseline;
 }
+.h12{
+    color: black;
+}
 .tittle{
     text-align: center;
 }
