@@ -1,8 +1,7 @@
-import './Productos.css';
-import Producto from "./Producto";
-
-const Productos = () => {
-    const productos =[
+   export function getProductos(){
+    return productos;
+   }
+    let productos =[
         {
          id: 1,
          nombre: "Remera Naranja",
@@ -29,21 +28,11 @@ const Productos = () => {
         },
 
     ];
-    return(
-        <div className="row">
-            {productos.map(productos => {
-                return(
-    
-                <Producto 
-                          id={productos.id}
-                          nombre={productos.nombre} 
-                          img={productos.img} 
-                          texto={productos.texto}/>
-            
-                )
-            })}
-        </div>
+  
+
+
+export function getProducto(id){
+    return productos.find(
+        (producto) => producto.id === id
     )
 }
-
-export default Productos;
