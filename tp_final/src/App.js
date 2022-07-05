@@ -6,24 +6,23 @@ import Menu from './Nav_bar';
 import Footer from './Footer_';
 import Contactos from './paginas/Contactos';
 import { Container} from 'react-bootstrap';
-import {Route, BrowserRouter, Routes} from 'react-router-dom';
+import {Route, BrowserRouter, Routes, useParams} from 'react-router-dom';
 import Inicio from './paginas/Inicio';
-// import ItemDetalles from './paginas/ItemDetalles';
-import Producto from './paginas/ItemDetalles';
+import Productos from './Productos';
+
  
 function App() {
-  
+  const {productos} = useParams();
+  console.log(productos);
   return (
-
+ 
    <Container>
     <BrowserRouter>
     <Menu></Menu>
     <Routes>
-      <Route  path='/' element={ <Inicio/> }/> 
-      <Route path='/producto' element={<Producto/>}></Route>
-      <Route  path='/contacto' element={<Contactos/>}/>
-      <Route path='/inicio' element={<Inicio/>}/>
-      <Route path=':productoId' element={<Producto/>}/>
+      <Route path='/' element={<Inicio/>}></Route>
+      <Route path='/producto' element={<Productos/> }></Route>
+      <Route path='/contacto' element={<Contactos/>}></Route>
     </Routes>
     <Footer />
     

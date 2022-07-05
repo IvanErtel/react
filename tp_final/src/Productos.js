@@ -1,7 +1,6 @@
-   export function getProductos(){
-    return productos;
-   }
-    let productos =[
+import { Container, ListGroup } from "react-bootstrap";
+import './Productos.css';
+    const productos =[
         {
          id: 1,
          nombre: "Remera Naranja",
@@ -31,8 +30,34 @@
   
 
 
-export function getProducto(id){
-    return productos.find(
-        (producto) => producto.id === id
-    )
+export function Productos(){
+    return (
+       <Container>
+        <ListGroup>
+            <div className="container m-4">
+                <div className="row">
+                    {productos.map(({ nombre, texto, img}) =>(
+                        // <div className="container">
+                        <div className="col-3">
+                          <div className="card text-center">
+                          <div className="overflow">
+                           <img src={img} alt="producto" className="card-img-top"/>
+                          </div>
+                          <div className="card-body">
+                           <h2 className="card-tittle">{nombre}</h2>
+                           <p className="card-text text-secondary">
+                             detalle: {texto}
+                           </p>
+                          </div>
+                         </div>
+                         </div>
+                        //  </div>
+                    )
+                    )}
+                </div>
+            </div>
+        </ListGroup>
+       </Container>
+    );
 }
+export default Productos;

@@ -7,38 +7,30 @@ function Inicio(){
 <Carousel.Item>
   <img
     className="d-block w-100 carousel"
-    src="https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg"
+    src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/clothes-apparel-big-sale-banner-for-facebook-design-template-32dffcab7597606310e4cbedfef0ef73_screen.jpg?ts=1626695536"
     alt="First slide"
   />
   <Carousel.Caption>
-    <h3>First slide label</h3>
-    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
   </Carousel.Caption>
 </Carousel.Item>
 <Carousel.Item>
   <img
     className="d-block w-100 carousel"
-    src="https://ep01.epimg.net/elpais/imagenes/2019/10/30/album/1572424649_614672_1572453030_noticia_normal.jpg"
+    src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/fashion-sale-banner-template-design-4772368bb4e85c49923b38d0c7cd5fc6_screen.jpg?ts=1649240579"
     alt="Second slide"
   />
 
   <Carousel.Caption>
-    <h3>Second slide label</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </Carousel.Caption>
 </Carousel.Item>
 <Carousel.Item>
   <img
     className="d-block w-100 carousel"
-    src="https://images.unsplash.com/photo-1621139261252-27d1a67449f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHNhdmFubmF8ZW58MHx8MHx8&w=1000&q=80"
+    src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/summer-clothes-sale-retail-banner-design-template-17bd9937665ee1326e96139f8c544db3_screen.jpg?ts=1567083202"
     alt="Third slide"
   />
 
   <Carousel.Caption>
-    <h3>Third slide label</h3>
-    <p>
-      Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-    </p>
   </Carousel.Caption>
 </Carousel.Item>
 </Carousel>
