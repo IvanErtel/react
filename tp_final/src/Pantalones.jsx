@@ -1,63 +1,75 @@
 import { Container, ListGroup } from "react-bootstrap";
-import './Productos.css';
-    const productos =[
+import { Link,} from "react-router-dom";
+import './Pantalones.css';
+    const pantalones =[
         {
          id: 1,
-         nombre: "Remera Naranja",
+         nombre: "pantalon 1",
          texto:"Some quick example text to build on the card title and make up the bulk of the card's content",
-         img: "./remera_naranja.jpg"
+         img: "../pantalon1.webp"
         },
         {
             id: 2,
-            nombre: "Remera Rosa",
+            nombre: "pantalon 2",
             texto:"Some quick example text to build on the card title and make up the bulk of the card's content",
-            img: "./remera_rosa.jpg"  
+            img: "../pantalon2.jpg"  
         },
         {
             id: 3,
-            nombre: "Remera azul",
+            nombre: "pantalon 3",
             texto:"Some quick example text to build on the card title and make up the bulk of the card's content",
-            img: "./remera_azul.jpg"  
+            img: "../pantalon3.jpg"  
         },
         {
             id: 4,
-            nombre: "Remera roja",
+            nombre: "pantalon 4",
             texto:"Some quick example text to build on the card title and make up the bulk of the card's content",
-            img: "./remera_roja.jpg"  
+            img: "../pantalon4.webp"  
         },
+        
 
     ];
-  
 
+// export function getProductos(){
+//     return productos;
+// }
 
-export function Productos(){
+// export function getProducto(id){
+//     return productos.find(
+//         (producto) => producto.id === id
+//     );
+// }
+
+export function Pantalones(props){
+    // let {productosId} = useParams()
     return (
        <Container>
         <ListGroup>
             <div className="container m-4">
                 <div className="row">
-                    {productos.map(({ nombre, texto, img}) =>(
-                        // <div className="container">
-                        <div className="col-3">
+                    {pantalones.map(({id, nombre, texto, img}) =>(
+                        
+                        <div className="col-3" key={id}>
                           <div className="card text-center">
                           <div className="overflow">
-                           <img src={img} alt="producto" className="card-img-top"/>
+                           <img src={img} alt="Imagen no encontrada" className="card-img-top"/>
                           </div>
                           <div className="card-body">
                            <h2 className="card-tittle">{nombre}</h2>
                            <p className="card-text text-secondary">
-                             detalle: {texto}
+                             detalle: {texto} {props.id}
                            </p>
-                          </div>
+                           <Link className="button" to={`/productos/${pantalones.id}`}> Detalle </Link>
+                            </div>
                          </div>
-                         </div>
-                        //  </div>
+                         </div>                        
                     )
                     )}
                 </div>
             </div>
         </ListGroup>
        </Container>
+       
     );
 }
-export default Productos;
+export default Pantalones;

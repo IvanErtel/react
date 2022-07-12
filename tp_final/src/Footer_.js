@@ -4,10 +4,10 @@ import './Footer_.css';
 function Footer() {
     return (
       <div className="container-fluid footer"> 
-      <footer class="text-center footer-style">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 footer-col">
+      <footer className="text-center footer-style">
+    <div className="container">
+        <div className="row">
+            <div className="col-md-4 footer-col">
                 <h3>Dirección</h3>
                 <p>
                     CABA - Argentina <br />
@@ -15,7 +15,7 @@ function Footer() {
                 </p>
             </div>
             
-            <div class="col-md-4 footer-col menu">
+            <div className="col-md-4 footer-col menu">
                 <h3>Mis redes</h3>
                     <Link className="w-100" to="/" >Facebook </Link> 
                     <br/>
@@ -24,7 +24,7 @@ function Footer() {
                     <Link className="w-100" to="/">TikTok </Link>
                     <br/>
             </div>
-            <div class="col-md-4 footer-col">
+            <div className="col-md-4 footer-col">
                 <h3>DeRemeras</h3>
                 <p>La mayor variedad en remeras de todo el pais!</p>
             </div>
