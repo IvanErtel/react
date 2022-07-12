@@ -45,16 +45,16 @@ export function Pantalones(props){
     return (
        <Container>
         <ListGroup>
-            <div className="container m-4">
+            <div className="container">
                 <div className="row">
                     {pantalones.map(({id, nombre, texto, img}) =>(
                         
                         <div className="col-3" key={id}>
-                          <div className="card text-center">
+                          <div className="card text-center tarjeta">
                           <div className="overflow">
-                           <img src={img} alt="Imagen no encontrada" className="card-img-top"/>
+                           <img src={img} alt="Imagen no encontrada" className="card-img-top imagen"/>
                           </div>
-                          <div className="card-body">
+                          <div className="card-body imagen">
                            <h2 className="card-tittle">{nombre}</h2>
                            <p className="card-text text-secondary">
                              detalle: {texto} {props.id}

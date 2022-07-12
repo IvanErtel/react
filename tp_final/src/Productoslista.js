@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
 import { Container, ListGroup } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
-import Productos from './Productos'
+import Productos, { getProducto } from './Productos'
 // import './ProductsList.css'
+
 
 function Productslista(props){
     

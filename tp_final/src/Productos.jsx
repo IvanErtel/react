@@ -1,5 +1,5 @@
 import { Container, ListGroup } from "react-bootstrap";
-import { Link, useParams} from "react-router-dom";
+import { NavLink, useParams} from "react-router-dom";
 import './Productos.css';
     const productos =[
         {
@@ -30,36 +30,37 @@ import './Productos.css';
 
     ];
 
-// export function getProductos(){
-//     return productos;
-// }
+export function getProductos(){
+    return productos;
+}
 
-// export function getProducto(id){
-//     return productos.find(
-//         (producto) => producto.id === id
-//     );
-// }
+export function getProducto(id){
+    return productos.find(
+        (producto) => producto.id === id
+    );
+}
 
 export function Productos(props){
-    // let {productosId} = useParams()
+    let productos = getProductos();
+    let params = useParams();
     return (
        <Container>
         <ListGroup>
-            <div className="container m-4">
+            <div className="container">
                 <div className="row">
-                    {productos.map(({id, nombre, texto, img}) =>(
+                    {productos.map((e) =>(
                         
-                        <div className="col-3" key={productos.id}>
+                        <div className="col-3" key={e.id}>
                           <div className="card text-center">
                           <div className="overflow">
-                           <img src={img} alt="Imagen no encontrada" className="card-img-top"/>
+                           <img src={e.img} alt="Imagen no encontrada" className="card-img-top"/>
                           </div>
                           <div className="card-body">
-                           <h2 className="card-tittle">{nombre}</h2>
+                           <h2 className="card-tittle">{e.nombre}</h2>
                            <p className="card-text text-secondary">
-                             detalle: {texto} {props.id}
+                             detalle: {e.texto} {props.id}-
                            </p>
-                           <Link className="button" to={`/productos/${productos.id}`}> Detalle </Link>
+                           <NavLink className="button" to={`/productos/${params.catId}/${e.id}`}> Detalle </NavLink>
                             </div>
                          </div>
                          </div>                        
