@@ -1,29 +1,30 @@
 import { Container, ListGroup } from "react-bootstrap";
 import { NavLink, useParams} from "react-router-dom";
 import './Productos.css';
+
     const productos =[
         {
          id: 1,
          nombre: "Remera Naranja",
-         texto:"Some quick example text to build on the card title and make up the bulk of the card's content",
+         texto:"Soy el detalle uno",
          img: "../remera_naranja.png"
         },
         {
             id: 2,
             nombre: "Remera Rosa",
-            texto:"Some quick example text to build on the card title and make up the bulk of the card's content",
+            texto:"Soy el detalle dos",
             img: "../remera_rosa.png"  
         },
         {
             id: 3,
             nombre: "Remera azul",
-            texto:"Some quick example text to build on the card title and make up the bulk of the card's content",
+            texto:"Soy el detalle tres",
             img: "../remera_azul.jpg"  
         },
         {
             id: 4,
             nombre: "Remera roja",
-            texto:"Some quick example text to build on the card title and make up the bulk of the card's content",
+            texto:"Soy el detalle cuatro",
             img: "../remera_roja.jpg"  
         },
         
@@ -60,7 +61,7 @@ export function Productos(props){
                            <p className="card-text text-secondary">
                              detalle: {e.texto} {props.id}-
                            </p>
-                           <NavLink className="button" to={`/productos/${params.catId}/${e.id}`}> Detalle </NavLink>
+                           <NavLink className="button" to={`/producto/${params.Id}/${e.id}`}> Detalle </NavLink>
                             </div>
                          </div>
                          </div>                        
