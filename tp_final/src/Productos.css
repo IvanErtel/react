@@ -1,5 +1,13 @@
 h2{
-    color: rgb(232, 15, 15);
+    color: rgb(0, 0, 0);
+}
+.card-text{
+  color: rgb(0, 0, 0);
+  background-color: #8783195e;
+  border-radius: 5%;
+  padding: 5px;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 .card{
   width: 18rem;
@@ -13,7 +21,28 @@ h2{
  display: inline-block;
  border-radius: 10%;
  font-size: 16px;
+ box-shadow: 1px 2px 6px rgba(0, 0, 0, 1.9);
 }
 .container{
   padding: 10px;
 }
+.card{
+  box-shadow: 1px 3.5px 10px rgba(0, 0, 0, 0.459);
+  margin: 0 auto;
+}
+
+.boxImg img{
+  padding-top: 20px;
+  padding-right: 20px;
+  -webkit-transition: .8s ;
+  width:80%;
+}
+.boxImg:hover img {
+  transform:scale(1.14);
+}
+.boxImg {/*Ancho y altura son modificables al requerimiento de cada uno*/
+    width:300px;
+    height:300px;
+    overflow:hidden;
+}
+   

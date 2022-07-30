@@ -25,7 +25,7 @@ function Footer() {
                     <br/>
             </div>
             <div className="col-md-4 footer-col">
-                <h3>DeRemeras</h3>
+                <h3>DeRopa</h3>
                 <p>La mayor variedad en remeras de todo el pais!</p>
             </div>
         </div>
