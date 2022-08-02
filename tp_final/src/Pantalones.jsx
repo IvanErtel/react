@@ -81,7 +81,7 @@ export function Pantalones(props){
             <div className="container">
                 <div className="row">
                     {pantalones.map((e) =>(                       
-                        <div className="col-3" key={e.id}>
+                        <div className="col-sm" key={e.id}>
                           <div className="card text-center">
                           <div className="overflow boxImg">
                            <img src={e.img} alt="Imagen no encontrada" className="card-img-top cardImg"/>
