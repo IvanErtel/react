@@ -1,70 +1,86 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center"> Aveiro tienda de ropa en React </h1>
+<br>
+        
+<h4 align="center">
+   :construction:<img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green"> :construction:
+</h4>
+   
+<br>
 
-## Available Scripts
+## Índice
 
-In the project directory, you can run:
+* [Descripción del proyecto](#descripción-del-proyecto)
 
-### `npm start`
+* [Funcionalidades del proyecto](#Funcionalidades-del-proyecto)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* [Tecnologias utilizadas](#Funcionalidades-del-proyecto)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* [Profesor](#Profesor)
 
-### `npm test`
+* [Como descargo el proyecto](#Como-descargo-el-proyecto)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* [Paso a Paso](#Paso-a-Paso)
+<br>
 
-### `npm run build`
+ ## Descripción del proyecto
+ 
+proyecto para la tecnicatura en programacion,tienda de ropa con navegacion entre categorias sin refrezcar la pagina, con boton para ver detalles de cada producto
+. en los proximos meses se agregara carrito de compras para poder agregar y eliminar elementos.
+<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## :hammer:Funcionalidades del proyecto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `Funcionalidad 1`: navbar con navegación 
+  `Funcionalidad 2`: deslizamiento carrousel 
+  `Funcionalidad 3`: boton con detalle de cada producto 
+  `Funcionalidad 3`: sin refrezcar la pagina
+  <br>
+## Tecnologias utilizadas
+ <div>
+ <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?&style=for-the-badge&logo=Canva&logoColor=white" />
+ <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
+ <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" />
+ <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+ <img src="https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
+ <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+ <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
+</div>
+<br>
+  
+## Profesor
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ [<img src="https://avatars.githubusercontent.com/u/88291173?v=4" width=115><br><sub>Nestor beer</sub>](https://github.com/nestorbeer) 
+ <br> 
+ 
+ ## Como descargar el proyecto
+ 
+ 
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+https://user-images.githubusercontent.com/87578635/182002953-2f0cf20f-cc31-458f-8bec-c301a2d83fe2.mp4
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<br>
 
-## Learn More
+## Paso a Paso 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* iniciamos con click izquierdo en "Code", a continuacion click en "Download ZIP"
+* Una vez descargado click derecho y clickeamos "extraer aqui" (esto nos genera la carpeta con
+lo necesario para correr la aplicacion web)
+* Arrastramos la carpeta y la llevamos hasta visual studio code
+* Dentro de Visual studio code, Click en "terminal", luego en "Nueva terminal"
+* En la terminal escribimos cd tp_final y damos Enter
+* luego escribimos npm i y damos enter (esto demora algunos segundos, paciencia)
+* por ultimo escribimos en la terminal npm start y se nos abrira el proyecto
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
