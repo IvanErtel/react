@@ -2,8 +2,8 @@
     padding: 100px;
 }
 .formulario2{
-    padding: 100px;
-    border: 1px solid black;
+    padding: 50px;
+    box-shadow: 5px 5px 15px 1px rgba(4, 113, 41, 0.5);
     border-radius: 0.5rem;
 }
 .boton{    

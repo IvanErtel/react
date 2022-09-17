@@ -1,8 +1,9 @@
-.inicio{
-    color: black;
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
 .carousel{
-    max-width: 1500px;
     padding: 1rem;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }

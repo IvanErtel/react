@@ -7,8 +7,8 @@ import './Productos.css';
 export function DetallePantalones(){
   
   let params = useParams();
-  let detallePantalon = getPantalon(parseInt(params.pantalonesId, 10));
-   console.log(detallePantalon);
+  let detallePantalon = getPantalon(parseInt(params.pantalonesId));
+  
     return(
       <Row>                 
           <Fragment>
@@ -17,7 +17,7 @@ export function DetallePantalones(){
                         <div className="col-3" key={detallePantalon.id}>
                           <div className="card text-center">
                           <div className="overflow boxImg">
-                           <img src={detallePantalon.img} alt="Imagen no encontrada" className="card-img-top"></img>                         
+                            <img src={detallePantalon.img} alt="Imagen no encontrada" className="card-img-top"></img>                         
                           </div>
                           <div className="card-body">
                            <h2 className="card-tittle">{detallePantalon.nombre}</h2>

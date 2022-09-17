@@ -88,7 +88,7 @@ export function Productos(props){
                         <div className="col-sm" key={e.id}>
                           <div className="card text-center">
                           <div className="overflow boxImg">
-                           <img src={e.img} alt="Imagen no encontrada" className="card-img-top cardImg"/>
+                           <img src={e.img} alt="Imagen no encontrada" className="card-img-top cardImg"></img>
                           </div>
                           <div className="card-body">
                            <h2 className="card-tittle">{e.nombre}</h2>

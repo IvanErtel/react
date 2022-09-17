@@ -36,28 +36,28 @@ const pantalones =[
         id: 5,
         nombre: "Pantalon Negro",
         precio: 1950,
-        texto:"Soy el detalle cuatro",
+        texto:"Soy el detalle cinco",
         img: "../pantalon5.jpg"  
     },
     {
         id: 6,
         nombre: "Pantalon Roto",
         precio: 1450,
-        texto:"Soy el detalle cuatro",
+        texto:"Soy el detalle seis",
         img: "../pantalon6.png"  
     },
     {
         id: 7,
         nombre: "Pantalon Roto 2",
         precio: 1780,
-        texto:"Soy el detalle cuatro",
+        texto:"Soy el detalle siete",
         img: "../pantalon7.png"  
     },
     {
         id: 8,
         nombre: "pantalon fulbo",
         precio: 1620,
-        texto:"Soy el detalle cuatro",
+        texto:"Soy el detalle ocho",
         img: "../pantalon8.avif"  
     },
 
@@ -84,7 +84,7 @@ export function Pantalones(props){
                         <div className="col-sm" key={e.id}>
                           <div className="card text-center">
                           <div className="overflow boxImg">
-                           <img src={e.img} alt="Imagen no encontrada" className="card-img-top cardImg"/>
+                           <img src={e.img} alt="Imagen no encontrada" className="card-img-top cardImg"></img>
                           </div>
                           <div className="card-body">
                            <h2 className="card-tittle">{e.nombre}</h2>

@@ -1,23 +1,23 @@
-
-  h1 {
-    color: white;
+.containerLink{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+  h5 {
+    color: rgb(0, 0, 0);
     text-align: center;
+    font-family: 'Luckiest Guy', cursive;
   }
-  
+  .imgNavbar{
+    /* margin-left: 10px; */
+    width: 50px;
+    border-radius: 50%;
+  }
   p {
     font-family: verdana;
     font-size: 20px;
   }
-  ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin: 10px;
-    padding: 0;
-  }
-
- 
-  .navbar{
+  /* .navbar{
+    margin-left: 190px;
     font-size: 20px;
-    color: rgb(255, 255, 255);
-  }
+  } */
