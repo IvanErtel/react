@@ -1,7 +1,7 @@
 
 h2{
-    font-family: 'Luckiest Guy', cursive;
-    color: rgb(0, 0, 0);
+  font-family: 'Cabin', sans-serif;
+  color: rgb(0, 0, 0);
 }
 .card-text{
   color: rgb(0, 0, 0);
@@ -30,10 +30,11 @@ h2{
 }
 .card{
   box-shadow: 1px 3.5px 10px rgba(0, 0, 0, 0.459);
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .boxImg img{
+  border-radius: 15px;
   padding-top: 20px;
   padding-right: 20px;
   -webkit-transition: .8s ;

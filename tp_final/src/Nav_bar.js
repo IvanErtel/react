@@ -1,28 +1,38 @@
-import React from "react";
+import 'animate.css';
 import './Nav_bar.css';
-import { Container, Nav, Navbar} from 'react-bootstrap';
-import {NavLink, Link} from 'react-router-dom';
+import { Fragment } from 'react';
 
 function Menu() {
-    return (
-    <>
-    <Nav className="justify-content-center" variant="tabs" >
-       <Navbar collapseOnSelect expand="lg" variant="dark" className="navbar justify-content-center">
-         <Container>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-          <NavLink style={{textDecoration: 'none', color:'black', marginRight:'5Rem' }}  to="/"><img className="imgNavbar" src="../logoHome.jpg"></img><h5>Home</h5></NavLink>
-          <Link style={{textDecoration: 'none', color:'black', marginRight:'5Rem' }} to="/producto/1"><img className="imgNavbar" src="../remera_negra.jpg"></img><h5>Remeras</h5> </Link>
-          <Link style={{textDecoration: 'none', color:'black', marginRight:'5Rem' }} to="/pantalones/3"><img className="imgNavbar" src="../pantalon4.webp"></img><h5>Pantalones</h5></Link>
-          <Link style={{textDecoration: 'none', color:'black', marginRight:'5Rem' }} to="/producto/catId:4">Cat 4</Link>
-          <NavLink style={{textDecoration: 'none', color:'black', marginRight:'5Rem' }}  to="/contacto">Contactanos</NavLink>
-          <NavLink style={{textDecoration: 'none', color:'black', marginRight:'5Rem' }}  to="/cart"><img className="imgNavbar" src="../logoCarrito3.jpg"></img><h5>Carrito</h5></NavLink>
-          </Navbar.Collapse>
-         </Container>
-        </Navbar>
-    </Nav>
-    </>
-    );
-  }
-  
-  export default Menu;
+  return (
+ 
+    <Fragment>
+          <div class="container d-flex justify-content-center">
+            <nav class="navbar navbar-expand-lg col-12">
+              <div class="col-10 ">
+                    <a class="navbar-brand"  href="/"><img className="imgNavbarLogo" src="../logoHome.jpg"></img></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    </div>
+                   <div class="animate__animated animate__pulse collapse col-2 navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                         <a class="nav-link" aria-current="page" href="/producto/1"><img className="imgNavbar" src="../remera_negra.jpg"></img></a>
+                      </li>
+                      <li class="nav-item">
+                         <a class="nav-link" href="/pantalones/3"><img className="imgNavbar" src="../pantalon4.webp"></img></a>
+                      </li>
+                      <li class="nav-item ">
+                         <a class="nav-link" href="/cart"><img className="imgNavbar" src="../logoCarrito3.jpg"></img></a>
+                      </li>     
+                    </ul>
+
+                  </div>
+
+            </nav>
+          </div>
+</Fragment>   
+  );
+}
+
+export default Menu;

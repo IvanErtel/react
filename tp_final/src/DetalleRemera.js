@@ -13,21 +13,28 @@ export function DetalleRemera(){
       <Row>                 
           <Fragment>
             <div className="container">
-                <div className="row">                       
-                        <div className="col-3" key={detalleRemera.id}>
-                          <div className="card text-center">
-                          <div className="overflow boxImg">
-                           <img src={detalleRemera.img} alt="Imagen no encontrada" className="card-img-top"></img>                         
-                          </div>
-                          <div className="card-body">
-                           <h2 className="card-tittle">{detalleRemera.nombre}</h2>
-                           <p className="card-text text-secondary">
-                             detalle: {detalleRemera.texto} {detalleRemera.id}
-                           </p>
-                           <NavLink className="button" to={`/producto/${params.Id}`} element={<DetalleRemera/>}> Atras </NavLink>
+                <div className="row d-flex justify-content-center" key={detalleRemera.id}>                       
+                        <div className="col-3 d-flex justify-content-end cardDettalle">
+                        <img src={"../" + detalleRemera.img} alt="Imagen no encontrada" className="cardImgDetalle"></img>
+                        </div>
+                          <div className="col-3 d-flex justify-content-center">
+                          <div>
+                           <h2 className="card-tittle h2Nombre">{detalleRemera.nombre}</h2>
+                            <ul className='listDetalles'>
+                              <li> {detalleRemera.texto}</li>
+                              <li> {detalleRemera.texto}</li>
+                              <li> {detalleRemera.texto}</li>
+                              <li> {detalleRemera.texto}</li>
+                            </ul>
                             </div>
+                          </div>
+                          <div className="card col-3 d-flex justify-content-center text-center">
+                            <h6 className='detalleEnvio'>Forma de envio: {detalleRemera.envio}</h6>
+                            <h2>${detalleRemera.precio}</h2>
+                            <h5>garantia de : {detalleRemera.garantia}</h5>                        
+                            <NavLink className="buttonComprar" to={`/pantalones/${params.Id}`} element={<DetalleRemera/>}> Agregar al carrito </NavLink>
                          </div>
-                         </div>                                                        
+                                                        
                 </div>
             </div>
           </Fragment>     

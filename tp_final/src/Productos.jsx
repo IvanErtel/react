@@ -85,7 +85,7 @@ export function Productos(props){
             <div className="container">
                 <div className="row">
                     {productos.map((e) =>(                       
-                        <div className="col-sm" key={e.id}>
+                        <div className="col-sm " key={e.id}>
                           <div className="card text-center">
                           <div className="overflow boxImg">
                            <img src={e.img} alt="Imagen no encontrada" className="card-img-top cardImg"></img>
@@ -95,7 +95,7 @@ export function Productos(props){
                            <p className="card-text">
                              Precio: $ {e.precio} {props.id}
                            </p>
-                           <NavLink className="button" to={`/producto/${params.Id}/${e.id}`} element={<DetalleRemera/>}> Detalle </NavLink>
+                           <NavLink className="button" to={`/producto/${params.Id}/${e.id}`} element={<DetalleRemera/>}> Comprar </NavLink>
                             </div>
                          </div>
                          </div>                        

@@ -16,7 +16,6 @@ import Cart from './paginas/cart';
 
  
 function App() {
-  // const {productos} = useParams();
   return (
  
    <Container>
